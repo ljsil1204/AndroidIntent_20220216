@@ -57,5 +57,13 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        btnKokaoTalkPlayStoreLink.setOnClickListener {
+
+            val myUri = Uri.parse("market://details?id=com.kakao.talk")
+            val myIntent =Intent(Intent.ACTION_VIEW, myUri)
+            startActivity(myIntent)
+
+        }
+
     }
 }
